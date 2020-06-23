@@ -1,0 +1,60 @@
+                                    
+
+                                      Module 2
+                        
+                                  Python Assignment
+
+ 
+1.   Write a Python function to find the Max of three numbers.
+Ans: num1 = 10
+     num2 = 14
+     num3 = 12
+     if (num1 >= num2) and (num1 >= num3):
+     largest = num1
+     elif (num2 >= num1) and (num2 >= num3):
+     largest = num2
+     else:
+     largest = num3
+     print("The largest number is", largest)
+
+2.   Write a Python program to reverse a string.
+Ans: def string_reverse(str1):
+     rstr1 = ''
+     index = len(str1)
+     while index > 0:
+     rstr1 += str1[ index - 1 ]
+     index = index - 1
+     return rstr1
+     print(string_reverse('1234abcd'))
+
+3.   Write a Python function to check whether the number is prime or not.
+Ans: num = 407
+     if num > 1:
+     for i in range(2,num):
+     if (num % i) == 0:
+     print(num,"is not a prime number")
+     print(i,"times",num//i,"is",num)
+     break
+     else:
+     print(num,"is a prime number")
+     else:
+     print(num,"is not a prime number")
+
+4.   Use try, except, else and finally block to check whether the number is palindrome or not.(Raise error when input is not proper).
+Ans: num = input('Enter any number : ')
+     try:
+     val = int(num)
+     if num == str(num)[::-1]:
+     print('The given number is PALINDROME')
+     else:
+     print('The given number is NOT a palindrome')
+     except ValueError:
+     print("That's not a valid number, Try Again !")
+
+5.   Write a python function to find sum of squares of first n natural numbers.
+Ans: n=int(input("Enter a number: "))
+     sum1 = 0
+     while(n > 0):
+     sum1=sum1+n
+     n=n-1
+     print("The sum of first n natural numbers is",sum1)
